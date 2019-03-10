@@ -13,3 +13,7 @@ section {
     padding-left: 13px;
     padding-bottom: 13px;
 }
+img {
+height: auto;
+max-width: 100%;
+}
