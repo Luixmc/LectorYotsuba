@@ -4,6 +4,11 @@ body {
   font-family: 'Lobster';
 }
 
+.img-fluid-zalia {
+text-align: center;
+border:10px solid #122235"
+}
+
 #carousel {
   position: absolute;
   height: 200px;
