@@ -288,6 +288,11 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+.contenedor span {
+  text-align: center;
+  height: 200px;
+}
+
 input,
 button,
 select,
