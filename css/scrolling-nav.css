@@ -24,15 +24,24 @@ height: auto;
 max-width: 100%;
 }
 
+.letrablanca{
+color:#fff;
+text-align: center
+
+}
+
 .book-type{
 color:#fff;
 border-radius: 2px;
 font-size: 1.25rem;
 font-weight: lighter;
 letter-spacing: 1px;
-
+height: auto;
+max-width: 90%;
+font-style: italic;
+text-align: center
 }
 
-.mt-4{
-  margin-top: 1.5rem !important;
+.contenedor{
+  text-align: center
 }
