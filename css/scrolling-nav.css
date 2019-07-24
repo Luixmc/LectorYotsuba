@@ -55,6 +55,6 @@ padding:0;
 }
 
 .disqus_thread{
-  padding-right: 50%;
-  padding-left: 50%;
+  height: auto;
+  max-width: 100%;
 }
