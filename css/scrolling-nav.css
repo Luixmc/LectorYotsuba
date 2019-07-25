@@ -16,8 +16,19 @@ section {
 img {
 height: auto;
 max-width: 100%;
-position:relative
 }
+
+.img-container img{
+  width:85%;
+  height:auto
+}
+
+.img-container{
+  width:auto;
+  height:100%;
+  overflow:hidden;
+}
+
 
 offset-lg-1{
 height: auto;
