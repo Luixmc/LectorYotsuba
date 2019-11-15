@@ -30,6 +30,10 @@ max-width: 100%;
 }
 
 
+.capitulos {
+padding-left: 13px;
+}
+
 offset-lg-1{
 height: auto;
 max-width: 100%;
@@ -37,8 +41,6 @@ max-width: 100%;
 
 .letrablanca{
 color:#fff;
-text-align: center
-
 }
 
 .book-type{
@@ -55,6 +57,21 @@ margin:0;
 padding:0;
 }
 
+.offset-lg-1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  background-color: #1C2A37;
+  height: auto;
+  max-width: 80%;
+}
+
+.offset-lg-1 a{
+  margin-left: 5%;
+}
+
 .contenedor{
   text-align: center;
   
@@ -67,5 +84,5 @@ padding:0;
 
 .disqus_thread{
   height: auto;
-  width: 90%;
+  max-width: 60%;
 }
