@@ -69,7 +69,8 @@ padding:0;
 }
 
 .offset-lg-1 a{
-  margin-left: 20px;
+  
+  padding-left: 50px;
 }
 
 .contenedor{
