@@ -86,9 +86,9 @@ padding:0;
 .disqus_thread{
   height: auto;
   max-width: 90%;
-  padding-left: 50px;
-  padding-top: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
   padding-bottom: 50px;
-  padding-right: 50px;
+  margin-right: 30px;
   
 }
