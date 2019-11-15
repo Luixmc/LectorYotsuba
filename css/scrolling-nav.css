@@ -69,23 +69,19 @@ padding:0;
 }
 
 .offset-lg-1 a{
-  
   padding-left: 50px;
 }
 
 .contenedor{
   text-align: center;
-  
   padding-right: 50%;
   padding-left: 50%;
   margin:0;
-padding:0;
+  padding:0;
   max-width: 90%;
 }
 
 .disqus_thread{
   height: auto;
   max-width: 90%;
-  
-  
 }
