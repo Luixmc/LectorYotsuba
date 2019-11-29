@@ -13,21 +13,7 @@ section {
     padding-left: 13px;
     padding-bottom: 13px;
 }
-img {
-height: auto;
-max-width: 100%;
-}
 
-.img-container img{
-  width:85%;
-  height:auto;
-}
-
-.img-container{
-  width:70%;
-  height:auto;
-  overflow:hidden;
-}
 
 
 .capitulos {
