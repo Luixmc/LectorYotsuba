@@ -24,7 +24,7 @@ max-width: auto;
 }
 
 .img-container{
-  width:70%;
+  width:auto;
   height:auto;
   overflow:hidden;
 }
