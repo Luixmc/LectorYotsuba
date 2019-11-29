@@ -15,11 +15,11 @@ section {
 }
 img {
 height: auto;
-max-width: 100%;
+max-width: 80%;
 }
 
 .img-container img{
-  width:65%;
+  width:85%;
   height:auto;
 }
 
