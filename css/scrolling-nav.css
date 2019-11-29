@@ -16,21 +16,36 @@ section {
 
 .box{
   position:absolute;
-  top:50%;
+  top:85%;
   left: 50%;
   transform: translate(-50%,-50%);
+  font: #fff;
 }
 .box select{
-  background:#0563af;
+  background:#35334b;
   padding:10px;
-  width:250px;
-  height:50px;
+  width:350px;
+  height:40px;
   border:none;
   font-size: 20px;
   box-shadow: 0 5px 25px rgba(0,0,0,.5);
-  -webkit-appearance: border;
+  -webkit-appearance: button;
+  font: #fff;
+}
+.box:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #007ce0;
+
 }
 
+.box:hover:before{
+  background: #0472ca;
+}
 img {
 height: auto;
 max-width: 100%;
