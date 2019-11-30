@@ -158,6 +158,10 @@ height: auto;
     }
 
 
+    .contenedor:hover {
+      filter: blur(5px);
+      transition:all .9s
+    }
   
   .contenedor-2{
     margin-left: auto;
