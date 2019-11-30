@@ -122,10 +122,10 @@
     position: relative;
     display: inline-block;
     text-align: center;
-    height: 320px;
-   width: 238px;
+
 font-size: 1.25rem;
-height: auto;
+height: 320px;
+width: 238px;
 
 
 }
@@ -135,8 +135,6 @@ height: auto;
   background-color:#fff;
   border:1px solid #636464;
   border-radius:.25rem;
-  max-width:100%;
-  height:auto;
   transition:all .9s ease-in-out;
   
 }
@@ -144,7 +142,7 @@ height: auto;
   border-radius:.45rem;
     opacity:0.9;
     position: absolute;
-    bottom: 25px;
+    bottom: 1px;
     left:20px;
     color: #ffffff;
     background-color: rgb(223, 98, 14);
@@ -153,15 +151,31 @@ height: auto;
     width: 77%;
     text-align: center;
     font-family: "Marker Felt_2";
-    margin-left: auto;
-    margin-right: auto;
     }
 
+hr{
+  border:4px solid #ffffff;
+  border-radius:.25rem;
+}
 
-    .contenedor:hover {
-      filter: blur(5px);
-      transition:all .20s
+.titulo img{
+  bottom: auto;
+}
+
+.titulo{
+  border:5px solid #ffffff;
+  
+  text-align: center;
+  color:white;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    .contenedor img:hover  {
+      filter: blur(2px);
+      transition:all 2s
     }
+
   
   .contenedor-2{
     margin-left: auto;
