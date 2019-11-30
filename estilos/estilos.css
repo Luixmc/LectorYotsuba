@@ -6,7 +6,11 @@
  header {
     padding: 156px 0 100px;
   }
-  
+
+  section {
+    background:#1C2A37;
+    
+  }
   section {
       padding-top: 13px;
       padding-right: 13px;
@@ -22,7 +26,7 @@
     font: #fff;
   }
   .box select{
-    background:#35334b;
+    background:#1C2A37;
     padding:10px;
     width:350px;
     height:40px;
@@ -67,6 +71,12 @@
   padding-left: 13px;
   }
   
+.logo{
+  width: 80px;
+  height: 80px;
+  margin-left: 47%;
+}
+
   offset-lg-1{
   height: auto;
   max-width: 100%;
@@ -84,7 +94,7 @@
   width: 238px;
 }
 .cuadro img{
-        background:#35334b;
+        background:#e66419;
         padding:10px;
         width:350px;
         height:40px;
@@ -158,13 +168,10 @@ hr{
   border-radius:.25rem;
 }
 
-.titulo img{
-  bottom: auto;
-}
+
 
 .titulo{
-  border:5px solid #ffffff;
-  
+
   text-align: center;
   color:white;
   font-size: 50px;
@@ -184,8 +191,11 @@ hr{
     margin-bottom: 50px;
     height: auto;
     max-width: 80%;
+    text-align: center;
   }
   
+
+
   .disqus_thread{
     height: auto;
     max-width: 90%;
