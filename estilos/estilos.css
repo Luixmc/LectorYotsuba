@@ -142,7 +142,7 @@ height: auto;
 }
 .texto-encima{
   border-radius:.45rem;
-    opacity:0.8;
+    opacity:0.9;
     position: absolute;
     bottom: 25px;
     left:20px;
@@ -152,12 +152,13 @@ height: auto;
     height:auto;
     width: 77%;
     text-align: center;
-    font-family: 'ccjoemad regular','Komika Title Regular', Arial, sans-serif;
+    font-family: 'Komika Title Regular', Arial, sans-serif;
     margin-left: auto;
     margin-right: auto;
-    
+    }
+@font-face{
+  font-family: ;
 }
-
   
   .contenedor-2{
     margin-left: auto;
