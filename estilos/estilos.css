@@ -160,7 +160,7 @@ height: auto;
 
     .contenedor:hover {
       filter: blur(5px);
-      transition:all .9s
+      transition:all .20s
     }
   
   .contenedor-2{
