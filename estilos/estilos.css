@@ -1,0 +1,174 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+ header {
+    padding: 156px 0 100px;
+  }
+  
+  section {
+      padding-top: 13px;
+      padding-right: 13px;
+      padding-left: 13px;
+      padding-bottom: 13px;
+  }
+  
+  .box{
+    position:absolute;
+    top:85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font: #fff;
+  }
+  .box select{
+    background:#35334b;
+    padding:10px;
+    width:350px;
+    height:40px;
+    border:none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    -webkit-appearance: button;
+    font: #fff;
+  }
+  .box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #007ce0;
+  
+  }
+  
+  .box:hover:before{
+    background: #0472ca;
+  }
+  img {
+  height: auto;
+  max-width: 100%;
+  }
+  
+  .img-container img{
+    width:85%;
+    height:auto;
+  }
+  
+  .img-container{
+    width:auto;
+    height:auto;
+    overflow:hidden;
+  }
+  
+  
+  .capitulos {
+  padding-left: 13px;
+  }
+  
+  offset-lg-1{
+  height: auto;
+  max-width: 100%;
+  }
+  
+  .letrablanca{
+  color:#fff;
+  }
+  
+  .cuadro{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  height: 320px;
+  width: 238px;
+}
+.cuadro img{
+        background:#35334b;
+        padding:10px;
+        width:350px;
+        height:40px;
+        border:none;
+        font-size: 20px;
+        box-shadow: 0 5px 25px rgba(0,0,0,.5);
+        -webkit-appearance: button;
+        font: #fff;
+}
+  
+  
+
+  .offset-lg-1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    background-color: #1C2A37;
+    height: auto;
+    max-width: 80%;
+  }
+  
+  .offset-lg-1 a{
+    padding-left: 50px;
+  }
+  
+  .contenedor-grande{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 320px;
+   width: 238px;
+font-size: 1.25rem;
+height: auto;
+
+
+}
+
+.contenedor img{
+  padding:.25rem;
+  background-color:#fff;
+  border:1px solid #636464;
+  border-radius:.25rem;
+  max-width:100%;
+  height:auto;
+  transition:all .9s ease-in-out;
+  
+}
+.texto-encima{
+    opacity:0.9;
+    position: absolute;
+    bottom: 25px;
+    left:20px;
+    color: #ffffff;
+    background-color: rgb(223, 98, 14);
+    padding:9px;
+    height:auto;
+    width: 75%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+  
+  .contenedor-2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: auto;
+    max-width: 80%;
+  }
+  
+  .disqus_thread{
+    height: auto;
+    max-width: 90%;
+  }
+  
