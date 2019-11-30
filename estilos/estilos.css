@@ -128,6 +128,21 @@
     text-align: center;
     
 }
+.fondo{
+  background:#1C2A37;
+  margin: auto;
+  width: 70%;
+  
+}
+.contenedor-img{
+position: relative;
+height: auto;
+margin-left: auto;
+width: 800px;
+margin-right: auto;
+text-align: center;
+}
+
 .contenedor{
     position: relative;
     display: inline-block;
