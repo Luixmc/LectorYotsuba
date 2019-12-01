@@ -135,13 +135,11 @@
   
 }
 .contenedor-img{
-position: relative;
-height: auto;
-margin-left: auto;
-width: 800px;
-margin-right: auto;
-text-align: center;
+    width:100%;
+    max-width:800px;
+
 }
+
 
 .contenedor{
     position: relative;
