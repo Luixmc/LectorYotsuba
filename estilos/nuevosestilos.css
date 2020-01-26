@@ -1,0 +1,38 @@
+.box{
+    position:absolute;
+    top:85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font: #fff;
+  }
+  .box select{
+    background:#1C2A37;
+    padding:10px;
+    width:350px;
+    height:40px;
+    border:none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    -webkit-appearance: button;
+    font: #fff;
+  }
+
+  
+
+  
+  img {
+  height: auto;
+  max-width: 100%;
+  }
+  
+  .img-container img{
+    width:78%;
+    height:auto;
+  }
+  
+  .img-container{
+    width:auto;
+    height:auto;
+    overflow:hidden;
+  }
+  
