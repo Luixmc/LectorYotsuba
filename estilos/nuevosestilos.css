@@ -7,7 +7,7 @@
 
 .box{
   position:absolute;
-  top:85%;
+
   left: 50%;
   transform: translate(-50%,-50%);
   font: #fff;
@@ -24,9 +24,8 @@
   font: #fff;
 }
 
-
-
-img {
+@media (min-width: 1300px) {
+ img {
 height: auto;
 max-width: 100%;
 }
@@ -35,12 +34,34 @@ max-width: 100%;
   width:78%;
   height:auto;
 }
-
 .img-container{
   width:auto;
   height:auto;
   overflow:hidden;
 }
+
+
+
+}
+@media (min-width: 100px) {
+ img {
+height: auto;
+max-width: 100%;
+}
+
+.img-container img{
+  width:100%;
+  height:auto;
+}
+
+.img-container{
+  Max-width:1200px;
+  height:auto;
+  overflow:hidden;
+}
+
+
+ }
 
 
 
