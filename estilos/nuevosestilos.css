@@ -43,7 +43,7 @@ max-width: 100%;
 
 
 }
-@media (min-width: 100px) {
+@media (min-width: 100px) and (max-width: 1300px) {
  img {
 height: auto;
 max-width: 100%;
@@ -89,7 +89,7 @@ max-width: 100%;
 
 
 
-}
+
 
 
 
