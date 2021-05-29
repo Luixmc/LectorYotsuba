@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<html lang="en-US"><head>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta name="exoclick-site-verification" content="043e4ac6d429fc45736a2571151745ed">
+<meta name="trafficjunky-site-verification" content="vnrwaw9t0">
+<meta name="csrf-token" content="AvpC3vwwG0vvYL681o2f4xFDey10133wb3PKGhrm">
+<title>
+            Lector Yotsuba
+    </title>
+    <link href="estilos/nuevosestilos.css" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="Favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Favicon.png">
+<link rel="manifest" href="https://lectortmo.com/favicon/manifest.json">
+<link rel="mask-icon" href="https://lectortmo.com/favicon/safari-pinned-tab.svg" color="#2957ba">
+<link rel="shortcut icon" href="https://lectortmo.com/favicon/favicon.ico">
 
-	<link href="estilos/nuevosestilos.css" rel="stylesheet">
 
-	<title>Hoshi No Yotsuba</title>
 
 <meta property="og:image" content="img/banner.png">
 <meta property="og:site_name" content="Hoshi No Yotsuba">
@@ -15,54 +29,578 @@
 <meta name="twitter:title" content="Hoshi No Yotsuba">
 <meta name="twitter:description" content="Hoshi No Yotsuba">
 <meta name="twitter:image" content="img/banner.png">
-<meta name="description" content="Hoshi No Yotsuba"><meta name="generator" content="Powered by Madara - A powerful multi-purpose theme by Madara">
-</head>
+<meta name="description" content="Hoshi No Yotsuba">
 
-<body >
+<link href="TuMangaOnline_files/app.css" rel="stylesheet">
+<!--[if IE 9]>
+<link href="/css/bootstrap-ie9.min.css" rel="stylesheet">
+<![endif]-->
+<!--[if lte IE 8]>
+<link href="/css/bootstrap-ie8.min.css" rel="stylesheet">
+<script type="text/javascript" src="/js/html5shiv@3.7.3"></script>
+<![endif]-->
+
+<script src="TuMangaOnline_files/rules-p-p5pLPFWZhaDH8.js" async=""></script><script type="text/javascript" async="" src="TuMangaOnline_files/recaptcha__es.js" crossorigin="anonymous" integrity="sha384-Z7AhdThlxA5w/0HCHcFTXThlFfYMU7g2OgIDf8RH2QYXf+gGXB4S2b+7PEtcRZ9w"></script><script src="TuMangaOnline_files/quant.js" async="" type="text/javascript"></script><script async="" type="text/javascript" src="TuMangaOnline_files/cmp2.js"></script><script id="facebook-jssdk" src="TuMangaOnline_files/sdk.js"></script><script async="" type="text/javascript" src="TuMangaOnline_files/choice.js"></script><script type="text/javascript" async="true">
+    (function() {
+        var host = 'lectortmo.com';
+        var element = document.createElement('script');
+        var firstScript = document.getElementsByTagName('script')[0];
+        var url = 'https://quantcast.mgr.consensu.org'
+            .concat('/choice/', 'p5pLPFWZhaDH8', '/', host, '/choice.js')
+        var uspTries = 0;
+        var uspTriesLimit = 3;
+        element.async = true;
+        element.type = 'text/javascript';
+        element.src = url;
+
+        firstScript.parentNode.insertBefore(element, firstScript);
+
+        function makeStub() {
+            var TCF_LOCATOR_NAME = '__tcfapiLocator';
+            var queue = [];
+            var win = window;
+            var cmpFrame;
+
+            function addFrame() {
+                var doc = win.document;
+                var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+                if (!otherCMP) {
+                    if (doc.body) {
+                        var iframe = doc.createElement('iframe');
+
+                        iframe.style.cssText = 'display:none';
+                        iframe.name = TCF_LOCATOR_NAME;
+                        doc.body.appendChild(iframe);
+                    } else {
+                        setTimeout(addFrame, 5);
+                    }
+                }
+                return !otherCMP;
+            }
+
+            function tcfAPIHandler() {
+                var gdprApplies;
+                var args = arguments;
+
+                if (!args.length) {
+                    return queue;
+                } else if (args[0] === 'setGdprApplies') {
+                    if (
+                        args.length > 3 &&
+                        args[2] === 2 &&
+                        typeof args[3] === 'boolean'
+                    ) {
+                        gdprApplies = args[3];
+                        if (typeof args[2] === 'function') {
+                            args[2]('set', true);
+                        }
+                    }
+                } else if (args[0] === 'ping') {
+                    var retr = {
+                        gdprApplies: gdprApplies,
+                        cmpLoaded: false,
+                        cmpStatus: 'stub'
+                    };
+
+                    if (typeof args[2] === 'function') {
+                        args[2](retr);
+                    }
+                } else {
+                    queue.push(args);
+                }
+            }
+
+            function postMessageEventHandler(event) {
+                var msgIsString = typeof event.data === 'string';
+                var json = {};
+
+                try {
+                    if (msgIsString) {
+                        json = JSON.parse(event.data);
+                    } else {
+                        json = event.data;
+                    }
+                } catch (ignore) {}
+
+                var payload = json.__tcfapiCall;
+
+                if (payload) {
+                    window.__tcfapi(
+                        payload.command,
+                        payload.version,
+                        function(retValue, success) {
+                            var returnMsg = {
+                                __tcfapiReturn: {
+                                    returnValue: retValue,
+                                    success: success,
+                                    callId: payload.callId
+                                }
+                            };
+                            if (msgIsString) {
+                                returnMsg = JSON.stringify(returnMsg);
+                            }
+                            if (event && event.source && event.source.postMessage) {
+                                event.source.postMessage(returnMsg, '*');
+                            }
+                        },
+                        payload.parameter
+                    );
+                }
+            }
+
+            while (win) {
+                try {
+                    if (win.frames[TCF_LOCATOR_NAME]) {
+                        cmpFrame = win;
+                        break;
+                    }
+                } catch (ignore) {}
+
+                if (win === window.top) {
+                    break;
+                }
+                win = win.parent;
+            }
+            if (!cmpFrame) {
+                addFrame();
+                win.__tcfapi = tcfAPIHandler;
+                win.addEventListener('message', postMessageEventHandler, false);
+            }
+        };
+
+        makeStub();
+
+        var uspStubFunction = function() {
+            var arg = arguments;
+            if (typeof window.__uspapi !== uspStubFunction) {
+                setTimeout(function() {
+                    if (typeof window.__uspapi !== 'undefined') {
+                        window.__uspapi.apply(window.__uspapi, arg);
+                    }
+                }, 500);
+            }
+        };
+
+        var checkIfUspIsReady = function() {
+            uspTries++;
+            if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+                console.warn('USP is not accessible');
+            } else {
+                clearInterval(uspInterval);
+            }
+        };
+
+        if (typeof window.__uspapi === 'undefined') {
+            window.__uspapi = uspStubFunction;
+            var uspInterval = setInterval(checkIfUspIsReady, 6000);
+        }
+    })();
+</script>
+
+<style>
+        .pending-items{
+            background: #f8f9fa;
+        }
+        .pending-items > .pending-item{
+            text-align: center;
+            border-bottom-width: 5px;
+            border-bottom-color: transparent;
+            border-bottom-style: solid;
+        }
+        .pending-items > .pending-item > a {
+            text-align: center;
+            display: block;
+        }
+        .pending-items > .pending-item > a > i{
+
+        }
+        .pending-items > .pending-item > a > span{
+            display: block;
+            color: rgba(0,0,0,.5);
+        }
+
+        .pending-items > .pending-item.watch > a > i{
+            color: #51a351 !important;
+        }
+        .pending-items > .pending-item.pending > a > i{
+            color: #f89406 !important;
+        }
+        .pending-items > .pending-item.follow > a > i{
+            color: #2f96b4 !important;
+        }
+        .pending-items > .pending-item.wish > a > i{
+            color: #bd362f !important;
+        }
+        .pending-items > .pending-item.have > a > i{
+            color: #0e67ef !important;
+        }
+        .pending-items > .pending-item.abandoned > a > i{
+            color: #970047 !important;
+        }
+
+        .pending-items > .pending-item:hover.watch,.pending-items > .pending-item.watch.active{
+            border-bottom-color: #51a351 !important;
+        }
+        .pending-items > .pending-item:hover.pending,.pending-items > .pending-item.pending.active{
+            border-bottom-color: #f89406 !important;
+        }
+        .pending-items > .pending-item:hover.follow,.pending-items > .pending-item.follow.active{
+            border-bottom-color: #2f96b4 !important;
+        }
+        .pending-items > .pending-item:hover.wish,.pending-items > .pending-item.wish.active{
+            border-bottom-color: #bd362f !important;
+        }
+        .pending-items > .pending-item:hover.have,.pending-items > .pending-item.have.active{
+            border-bottom-color: #0e67ef !important;
+        }
+        .pending-items > .pending-item:hover.abandoned,.pending-items > .pending-item.abandoned.active{
+            border-bottom-color: #970047 !important;
+        }
+        .pending-items > .pending-item:hover.watch> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.pending> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.follow> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.wish> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.have> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.abandoned> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item.watch.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.pending.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.follow.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.wish.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.have.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.abandoned.active> a > i:before{
+            font-weight: 900;
+        }
+    </style>
+
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-160667616-1',{'sampleRate': 1});
+    ga('send', 'pageview');
+        ga('set', 'userId', '2d9034c794325381');
+    </script>
+<script async="" src="TuMangaOnline_files/analytics.js"></script>
+
+<script async="" src="TuMangaOnline_files/asyncjs"></script>
+<script async="" src="TuMangaOnline_files/api_002.js"></script><style type="text/css"> .qc-cmp-button {    background-color: #222222 !important;    border-color: #222222 !important;  }  .qc-cmp-button:hover {    border-color: #222222 !important;  }  .qc-cmp-alt-action,  .qc-cmp-link {    color: #222222 !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    background-color: #222222 !important;    border-color: #222222 !important;  }  .qc-cmp-button {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    color: #222222 !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    background-color: #ffffff !important;    border-color: transparent !important;  }  .qc-cmp-ui,  .qc-cmp-ui .qc-cmp-title,  .qc-cmp-ui .qc-cmp-table,  .qc-cmp-ui .qc-cmp-messaging,  .qc-cmp-ui .qc-cmp-sub-title,  .qc-cmp-ui .qc-cmp-vendor-list,  .qc-cmp-ui .qc-cmp-purpose-info,  .qc-cmp-ui .qc-cmp-table-header,  .qc-cmp-ui .qc-cmp-beta-messaging,  .qc-cmp-ui .qc-cmp-main-messaging,  .qc-cmp-ui .qc-cmp-vendor-list-title{    color: #222222 !important;  }  .qc-cmp-ui a,  .qc-cmp-ui .qc-cmp-alt-action {    color: #ffffff !important;  }  .qc-cmp-ui {    background-color: #fefefe !important;  }  .qc-cmp-small-toggle.qc-cmp-toggle-on,  .qc-cmp-toggle.qc-cmp-toggle-on {    background-color: #222222!important;    border-color: #222222!important;  } div.qc-cmp2-container > a.qc-cmp2-persistent-link{background-color: #222222 !important;color: #ffffff !important;}</style><script src="TuMangaOnline_files/api.js" async="" defer="defer"></script><script class="ct_invocation_65349 ct_invocation_65349_0" jsonp="OBR.extern.onCheqResponse" src="TuMangaOnline_files/placement_invocation"></script><script src="TuMangaOnline_files/show_pla"></script><script type="text/javascript" src="TuMangaOnline_files/get_003" charset="UTF-8" async=""></script><script type="text/javascript" src="TuMangaOnline_files/get_002" charset="UTF-8" async=""></script><script type="text/javascript" src="TuMangaOnline_files/get" charset="UTF-8" async=""></script></head>
+<body class="dark-mode"><a rel="nofollow" href="#" aria-hidden="true" tabindex="-1" style="opacity: 0.01; position: absolute; z-index: -999; width: 54px; height: 22px;">___</a><div style="opacity: 0.01; position: absolute; z-index: -1000; width: 54px; height: 22px;"></div>
+<div id="app" class="pb-5">
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand animated fadeIn" href="https://lectortmo.com/">
+Hoshi<b>No</b><i>Yotsuba</i>
 
 
-<div class=".offset-lg-1" style=text-align:center>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header> <main role="main" class="container-fluid">
+<div class="row">
+
+<ins data-revive-zoneid="18" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
+</div>
+</div>
+</div>
+<div class="row">
 
 
-<a class="logo" href="index.html" title="Hoshi No Yotsuba">
+<div class="row">
+<div class="col">
+<nav class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+<a ></i></a>
 
-<img class="logo" src="img/banner.png" alt="Hoshi No Yotsuba">
+</nav>
+<div class="tab-content" id="pills-tabContent">
+<div class="tab-pane fade show active" id="pills-populars" role="tabpanel" aria-labelledby="pills-populars-tab">
+<div class="row">
 
 
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
 </a>
-
-        
-<h2>Mangas Activos</h2>
-                  
-
-<span class="contenedor">
-<div class="contenedor">
-   <img src="img/miniaturas/hermana.jpg" />
-   <a class="text" href="hermana.html">Hermanastra</a>
 </div>
 
- <div class="contenedor">
-  <img src="img/miniaturas/shiori.jpg" />
-  <a href="shiori.html" class="text">El Diario De Shiori</a>
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
 </div>
 
- <div class="contenedor">
-  <img src="img/miniaturas/shiori.jpg" />
-  <a href="shiori.html" class="text">El Diario De Shiori</a>
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
 </div>
 
- <div class="contenedor">
-  <img src="img/miniaturas/shiori.jpg" />
-  <a href="shiori.html" class="text">El Diario De Shiori</a>
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
 </div>
 
- <div class="contenedor">
-  <img src="img/miniaturas/shiori.jpg" />
-  <a href="shiori.html" class="text">El Diario De Shiori</a>
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
 </div>
 
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
 
-                							                   																								
-       <br><br><br><br><br>
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
 
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Hermanastra">Hermanastra</h4>
+</div>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+              
 </body></html>
