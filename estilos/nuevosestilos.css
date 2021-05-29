@@ -24,27 +24,32 @@
   font: #fff;
 }
 
+
 .contenedor{
   text-align: center;
 }
 .contenedor img{
 
-  background-image: url(http://cdn2.hubspot.net/hubfs/763617/images/img-left.png?t=1466090614807);
+  
   padding: 5px 10px 5px 10px;
   margin: 2px;
   display:inline-block;
-  width: 200px;
+ width:110; 
+  height:150;
   text-align: center;
 
 }
-
-.mangasactivos img{
-  width:110; 
-  height:150;
+.text{
+  position:absolute;
+    top:85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font: #fff;
 }
 
+
 .logo img{
-  width:38%;
+  width:28%;
   height:auto;
 }
 .img-container img{
