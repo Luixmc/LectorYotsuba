@@ -26,28 +26,33 @@
 
 
 .contenedor{
-  text-align: center;
+   position: relative;
+    display: inline-block;
+    text-align: center;
 }
 .contenedor img{
 
   
-  padding: 5px 10px 5px 10px;
-  margin: 2px;
+ 
   display:inline-block;
  width:110; 
   height:150;
   text-align: center;
-
+position: relative;
 }
 .text{
-  position:absolute;
-    top:85%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 
+.centrado{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .logo img{
   width:28%;
   height:auto;
