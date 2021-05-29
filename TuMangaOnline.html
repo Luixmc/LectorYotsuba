@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta name="exoclick-site-verification" content="043e4ac6d429fc45736a2571151745ed">
+<meta name="trafficjunky-site-verification" content="vnrwaw9t0">
+<meta name="csrf-token" content="AvpC3vwwG0vvYL681o2f4xFDey10133wb3PKGhrm">
+<title>
+            Lector Yotsuba
+    </title>
+    <link href="estilos/nuevosestilos.css" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="Favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Favicon.png">
+<link rel="manifest" href="https://lectortmo.com/favicon/manifest.json">
+<link rel="mask-icon" href="https://lectortmo.com/favicon/safari-pinned-tab.svg" color="#2957ba">
+<link rel="shortcut icon" href="https://lectortmo.com/favicon/favicon.ico">
+
+
+
+<meta property="og:image" content="img/banner.png">
+<meta property="og:site_name" content="Hoshi No Yotsuba">
+<meta property="fb:app_id" content="">
+<meta property="og:title" content="Hoshi No Yotsuba">
+<meta property="og:description" content="Hoshi No Yotsuba">
+<meta name="twitter:card" content="Hoshi No Yotsuba">
+<meta name="twitter:site" content="@HoshiNoYotsuba">
+<meta name="twitter:title" content="Hoshi No Yotsuba">
+<meta name="twitter:description" content="Hoshi No Yotsuba">
+<meta name="twitter:image" content="img/banner.png">
+<meta name="description" content="Hoshi No Yotsuba">
+
+<link href="TuMangaOnline_files/app.css" rel="stylesheet">
+<!--[if IE 9]>
+<link href="/css/bootstrap-ie9.min.css" rel="stylesheet">
+<![endif]-->
+<!--[if lte IE 8]>
+<link href="/css/bootstrap-ie8.min.css" rel="stylesheet">
+<script type="text/javascript" src="/js/html5shiv@3.7.3"></script>
+<![endif]-->
+
+<script src="TuMangaOnline_files/rules-p-p5pLPFWZhaDH8.js" async=""></script><script type="text/javascript" async="" src="TuMangaOnline_files/recaptcha__es.js" crossorigin="anonymous" integrity="sha384-Z7AhdThlxA5w/0HCHcFTXThlFfYMU7g2OgIDf8RH2QYXf+gGXB4S2b+7PEtcRZ9w"></script><script src="TuMangaOnline_files/quant.js" async="" type="text/javascript"></script><script async="" type="text/javascript" src="TuMangaOnline_files/cmp2.js"></script><script id="facebook-jssdk" src="TuMangaOnline_files/sdk.js"></script><script async="" type="text/javascript" src="TuMangaOnline_files/choice.js"></script><script type="text/javascript" async="true">
+    (function() {
+        var host = 'lectortmo.com';
+        var element = document.createElement('script');
+        var firstScript = document.getElementsByTagName('script')[0];
+        var url = 'https://quantcast.mgr.consensu.org'
+            .concat('/choice/', 'p5pLPFWZhaDH8', '/', host, '/choice.js')
+        var uspTries = 0;
+        var uspTriesLimit = 3;
+        element.async = true;
+        element.type = 'text/javascript';
+        element.src = url;
+
+        firstScript.parentNode.insertBefore(element, firstScript);
+
+        function makeStub() {
+            var TCF_LOCATOR_NAME = '__tcfapiLocator';
+            var queue = [];
+            var win = window;
+            var cmpFrame;
+
+            function addFrame() {
+                var doc = win.document;
+                var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+                if (!otherCMP) {
+                    if (doc.body) {
+                        var iframe = doc.createElement('iframe');
+
+                        iframe.style.cssText = 'display:none';
+                        iframe.name = TCF_LOCATOR_NAME;
+                        doc.body.appendChild(iframe);
+                    } else {
+                        setTimeout(addFrame, 5);
+                    }
+                }
+                return !otherCMP;
+            }
+
+            function tcfAPIHandler() {
+                var gdprApplies;
+                var args = arguments;
+
+                if (!args.length) {
+                    return queue;
+                } else if (args[0] === 'setGdprApplies') {
+                    if (
+                        args.length > 3 &&
+                        args[2] === 2 &&
+                        typeof args[3] === 'boolean'
+                    ) {
+                        gdprApplies = args[3];
+                        if (typeof args[2] === 'function') {
+                            args[2]('set', true);
+                        }
+                    }
+                } else if (args[0] === 'ping') {
+                    var retr = {
+                        gdprApplies: gdprApplies,
+                        cmpLoaded: false,
+                        cmpStatus: 'stub'
+                    };
+
+                    if (typeof args[2] === 'function') {
+                        args[2](retr);
+                    }
+                } else {
+                    queue.push(args);
+                }
+            }
+
+            function postMessageEventHandler(event) {
+                var msgIsString = typeof event.data === 'string';
+                var json = {};
+
+                try {
+                    if (msgIsString) {
+                        json = JSON.parse(event.data);
+                    } else {
+                        json = event.data;
+                    }
+                } catch (ignore) {}
+
+                var payload = json.__tcfapiCall;
+
+                if (payload) {
+                    window.__tcfapi(
+                        payload.command,
+                        payload.version,
+                        function(retValue, success) {
+                            var returnMsg = {
+                                __tcfapiReturn: {
+                                    returnValue: retValue,
+                                    success: success,
+                                    callId: payload.callId
+                                }
+                            };
+                            if (msgIsString) {
+                                returnMsg = JSON.stringify(returnMsg);
+                            }
+                            if (event && event.source && event.source.postMessage) {
+                                event.source.postMessage(returnMsg, '*');
+                            }
+                        },
+                        payload.parameter
+                    );
+                }
+            }
+
+            while (win) {
+                try {
+                    if (win.frames[TCF_LOCATOR_NAME]) {
+                        cmpFrame = win;
+                        break;
+                    }
+                } catch (ignore) {}
+
+                if (win === window.top) {
+                    break;
+                }
+                win = win.parent;
+            }
+            if (!cmpFrame) {
+                addFrame();
+                win.__tcfapi = tcfAPIHandler;
+                win.addEventListener('message', postMessageEventHandler, false);
+            }
+        };
+
+        makeStub();
+
+        var uspStubFunction = function() {
+            var arg = arguments;
+            if (typeof window.__uspapi !== uspStubFunction) {
+                setTimeout(function() {
+                    if (typeof window.__uspapi !== 'undefined') {
+                        window.__uspapi.apply(window.__uspapi, arg);
+                    }
+                }, 500);
+            }
+        };
+
+        var checkIfUspIsReady = function() {
+            uspTries++;
+            if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+                console.warn('USP is not accessible');
+            } else {
+                clearInterval(uspInterval);
+            }
+        };
+
+        if (typeof window.__uspapi === 'undefined') {
+            window.__uspapi = uspStubFunction;
+            var uspInterval = setInterval(checkIfUspIsReady, 6000);
+        }
+    })();
+</script>
+
+<style>
+        .pending-items{
+            background: #f8f9fa;
+        }
+        .pending-items > .pending-item{
+            text-align: center;
+            border-bottom-width: 5px;
+            border-bottom-color: transparent;
+            border-bottom-style: solid;
+        }
+        .pending-items > .pending-item > a {
+            text-align: center;
+            display: block;
+        }
+        .pending-items > .pending-item > a > i{
+
+        }
+        .pending-items > .pending-item > a > span{
+            display: block;
+            color: rgba(0,0,0,.5);
+        }
+
+        .pending-items > .pending-item.watch > a > i{
+            color: #51a351 !important;
+        }
+        .pending-items > .pending-item.pending > a > i{
+            color: #f89406 !important;
+        }
+        .pending-items > .pending-item.follow > a > i{
+            color: #2f96b4 !important;
+        }
+        .pending-items > .pending-item.wish > a > i{
+            color: #bd362f !important;
+        }
+        .pending-items > .pending-item.have > a > i{
+            color: #0e67ef !important;
+        }
+        .pending-items > .pending-item.abandoned > a > i{
+            color: #970047 !important;
+        }
+
+        .pending-items > .pending-item:hover.watch,.pending-items > .pending-item.watch.active{
+            border-bottom-color: #51a351 !important;
+        }
+        .pending-items > .pending-item:hover.pending,.pending-items > .pending-item.pending.active{
+            border-bottom-color: #f89406 !important;
+        }
+        .pending-items > .pending-item:hover.follow,.pending-items > .pending-item.follow.active{
+            border-bottom-color: #2f96b4 !important;
+        }
+        .pending-items > .pending-item:hover.wish,.pending-items > .pending-item.wish.active{
+            border-bottom-color: #bd362f !important;
+        }
+        .pending-items > .pending-item:hover.have,.pending-items > .pending-item.have.active{
+            border-bottom-color: #0e67ef !important;
+        }
+        .pending-items > .pending-item:hover.abandoned,.pending-items > .pending-item.abandoned.active{
+            border-bottom-color: #970047 !important;
+        }
+        .pending-items > .pending-item:hover.watch> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.pending> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.follow> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.wish> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.have> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item:hover.abandoned> a > i{
+            -webkit-animation: rubberBand 1s;
+            animation: rubberBand 1s;
+        }
+        .pending-items > .pending-item.watch.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.pending.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.follow.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.wish.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.have.active> a > i:before{
+            font-weight: 900;
+        }
+        .pending-items > .pending-item.abandoned.active> a > i:before{
+            font-weight: 900;
+        }
+    </style>
+
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-160667616-1',{'sampleRate': 1});
+    ga('send', 'pageview');
+        ga('set', 'userId', '2d9034c794325381');
+    </script>
+<script async="" src="TuMangaOnline_files/analytics.js"></script>
+
+<script async="" src="TuMangaOnline_files/asyncjs"></script>
+<script async="" src="TuMangaOnline_files/api_002.js"></script><style type="text/css"> .qc-cmp-button {    background-color: #222222 !important;    border-color: #222222 !important;  }  .qc-cmp-button:hover {    border-color: #222222 !important;  }  .qc-cmp-alt-action,  .qc-cmp-link {    color: #222222 !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    background-color: #222222 !important;    border-color: #222222 !important;  }  .qc-cmp-button {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    color: #222222 !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    background-color: #ffffff !important;    border-color: transparent !important;  }  .qc-cmp-ui,  .qc-cmp-ui .qc-cmp-title,  .qc-cmp-ui .qc-cmp-table,  .qc-cmp-ui .qc-cmp-messaging,  .qc-cmp-ui .qc-cmp-sub-title,  .qc-cmp-ui .qc-cmp-vendor-list,  .qc-cmp-ui .qc-cmp-purpose-info,  .qc-cmp-ui .qc-cmp-table-header,  .qc-cmp-ui .qc-cmp-beta-messaging,  .qc-cmp-ui .qc-cmp-main-messaging,  .qc-cmp-ui .qc-cmp-vendor-list-title{    color: #222222 !important;  }  .qc-cmp-ui a,  .qc-cmp-ui .qc-cmp-alt-action {    color: #ffffff !important;  }  .qc-cmp-ui {    background-color: #fefefe !important;  }  .qc-cmp-small-toggle.qc-cmp-toggle-on,  .qc-cmp-toggle.qc-cmp-toggle-on {    background-color: #222222!important;    border-color: #222222!important;  } div.qc-cmp2-container > a.qc-cmp2-persistent-link{background-color: #222222 !important;color: #ffffff !important;}</style><script src="TuMangaOnline_files/api.js" async="" defer="defer"></script><script class="ct_invocation_65349 ct_invocation_65349_0" jsonp="OBR.extern.onCheqResponse" src="TuMangaOnline_files/placement_invocation"></script><script src="TuMangaOnline_files/show_pla"></script><script type="text/javascript" src="TuMangaOnline_files/get_003" charset="UTF-8" async=""></script><script type="text/javascript" src="TuMangaOnline_files/get_002" charset="UTF-8" async=""></script><script type="text/javascript" src="TuMangaOnline_files/get" charset="UTF-8" async=""></script></head>
+<body class="dark-mode"><a rel="nofollow" href="#" aria-hidden="true" tabindex="-1" style="opacity: 0.01; position: absolute; z-index: -999; width: 54px; height: 22px;">___</a><div style="opacity: 0.01; position: absolute; z-index: -1000; width: 54px; height: 22px;"></div>
+<div id="app" class="pb-5">
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand animated fadeIn" href="https://lectortmo.com/">
+Hoshi<b>No</b><i>Yotsuba</i>
+
+
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header> <main role="main" class="container-fluid">
+<div class="row">
+
+<ins data-revive-zoneid="18" data-revive-id="eefcb35e166c23254ede1477c262a723"></ins>
+</div>
+</div>
+</div>
+<div class="row">
+
+
+<div class="row">
+<div class="col">
+<nav class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+<a ></i></a>
+
+</nav>
+<div class="tab-content" id="pills-tabContent">
+<div class="tab-pane fade show active" id="pills-populars" role="tabpanel" aria-labelledby="pills-populars-tab">
+<div class="row">
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38888">
+<a href="hermana.html">
+<div class="thumbnail book book-thumbnail-38888">
+<style>
+                .book-thumbnail-38888::before{
+                    background-image: url('img/miniaturas/hermana.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Uzaki-chan wa Asobitai!">Hermanastra</h4>
+</div>
+
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div>
+
+ <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="14752">
+<a href="https://lectortmo.com/library/manga/14752/arifureta-shokugyou-de-sekai-saikyou">
+<div class="thumbnail book book-thumbnail-14752">
+<style>
+                .book-thumbnail-14752::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/5ea98c5205829.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Arifureta Shokugyou de Sekai Saikyou">Arifureta Shokugyou de Sekai Saikyou</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>8.00</span></span>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="48901">
+<a href="https://lectortmo.com/library/manga/48901/kanchigai-no-atelier-master">
+<div class="thumbnail book book-thumbnail-48901">
+<style>
+                .book-thumbnail-48901::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/5e7d930d262a2.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Kanchigai No Atelier Master">Kanchigai No Atelier Master</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>9.75</span></span>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="53103">
+<a href="https://lectortmo.com/library/manga/53103/juujika-no-rokunin">
+<div class="thumbnail book book-thumbnail-53103">
+<style>
+                .book-thumbnail-53103::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/5f51517d51872.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Juujika no Rokunin">Juujika no Rokunin</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>7.55</span></span>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography seinen">Seinen</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="60225">
+<a href="https://lectortmo.com/library/manga/60225/ore-wa-seikan-kokka-no-akutoku-ryoshu">
+<div class="thumbnail book book-thumbnail-60225">
+<style>
+                .book-thumbnail-60225::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/60b06a554b9b9.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Ore wa Seikan Kokka no Akutoku Ryōshu!">Ore wa Seikan Kokka no Akutoku Ryōshu!</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>0.00</span></span>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="56525">
+<a href="https://lectortmo.com/library/manhua/56525/emperador-inmortal-luo-wuji">
+<div class="thumbnail book book-thumbnail-56525">
+<style>
+                .book-thumbnail-56525::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/60011d1aec452.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Emperador inmortal Luo Wuji">Emperador inmortal Luo Wuji</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>8.50</span></span>
+<span class="book-type badge badge-manhua">MANHUA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="28766">
+<a href="https://lectortmo.com/library/manga/28766/seirei-gensouki-konna-sekai-de-deaeta-kimi-ni">
+<div class="thumbnail book book-thumbnail-28766">
+<style>
+                .book-thumbnail-28766::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/5f31f324f0d17.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Seirei Gensouki ~Konna Sekai de Deaeta Kimi ni~">Seirei Gensouki ~Konna Sekai de Deaeta Kimi ni~</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>6.80</span></span>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography seinen">Seinen</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="38837">
+<a href="https://lectortmo.com/library/manga/38837/seijo-no-maryoku-wa-bannou-desu">
+<div class="thumbnail book book-thumbnail-38837">
+<style>
+                .book-thumbnail-38837::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/5c60f19bdc4a9.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Seijo no Maryoku wa Bannou desu">Seijo no Maryoku wa Bannou desu</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>9.00</span></span>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shoujo">Shoujo</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="60247">
+<a href="https://lectortmo.com/library/one_shot/60247/mi-padre-es-mi-enemigo-de-mi-vida-pasada">
+<div class="thumbnail book book-thumbnail-60247">
+<style>
+                .book-thumbnail-60247::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/60b19bdc5b0c3.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="¿Mi padre es mi enemigo de mi vida pasada?">¿Mi padre es mi enemigo de mi vida pasada?</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>0.00</span></span>
+<span class="book-type badge badge-one_shot">ONE SHOT</span>
+<span class="demography shoujo">Shoujo</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="34630">
+<a href="https://lectortmo.com/library/manga/34630/tokyo-revengers">
+<div class="thumbnail book book-thumbnail-34630">
+<style>
+                .book-thumbnail-34630::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/5d69c0e23c588.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Tokyo 卍 Revengers">Tokyo 卍 Revengers</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>9.63</span></span>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="13384">
+<a href="https://lectortmo.com/library/manga/13384/enen-no-shouboutai">
+<div class="thumbnail book book-thumbnail-13384">
+<style>
+                .book-thumbnail-13384::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/5d0340fbe1c4c.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="Enen no Shouboutai">Enen no Shouboutai</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>7.26</span></span>
+<span class="book-type badge badge-manga">MANGA</span>
+<span class="demography shounen">Shounen</span>
+</div>
+</a>
+</div> <div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="58133">
+<a href="https://lectortmo.com/library/manhwa/58133/the-way-that-knight-lives-as-a-lady">
+<div class="thumbnail book book-thumbnail-58133">
+<style>
+                .book-thumbnail-58133::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/604a4e9b32350.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="La forma en que el caballero vive como una dama">La forma en que el caballero vive como una dama</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>10.00</span></span>
+<span class="book-type badge badge-manhwa">MANHWA</span>
+<span class="demography josei">Josei</span>
+</div>
+</a>
+</div> 
+<div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="58133">
+<a href="https://lectortmo.com/library/manhwa/58133/the-way-that-knight-lives-as-a-lady">
+<div class="thumbnail book book-thumbnail-58133">
+<style>
+                .book-thumbnail-58133::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/604a4e9b32350.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="La forma en que el caballero vive como una dama">La forma en que el caballero vive como una dama</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>10.00</span></span>
+<span class="book-type badge badge-manhwa">MANHWA</span>
+<span class="demography josei">Josei</span>
+</div>
+</a>
+</div>
+<div class="element  col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-2 " data-identifier="58133">
+<a href="https://lectortmo.com/library/manhwa/58133/the-way-that-knight-lives-as-a-lady">
+<div class="thumbnail book book-thumbnail-58133">
+<style>
+                .book-thumbnail-58133::before{
+                    background-image: url('https://otakuteca.com/images/books/cover/604a4e9b32350.jpg');
+                }
+            </style>
+<div class="thumbnail-title">
+<h4 class="text-truncate" title="La forma en que el caballero vive como una dama">La forma en que el caballero vive como una dama</h4>
+</div>
+<span class="score"><i class="fas fa-star fa-fw"></i><span>10.00</span></span>
+<span class="book-type badge badge-manhwa">MANHWA</span>
+<span class="demography josei">Josei</span>
+</div>
+</a>
+</div>
+
+              
+</body></html>
